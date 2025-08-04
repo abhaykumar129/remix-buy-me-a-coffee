@@ -5,7 +5,7 @@
 """
 @license MIT
 @title Buy Me A Coffee!
-@author You!
+@Abhay Kumar
 @notice This contract is for creating a sample funding contract
 """
 
@@ -126,4 +126,5 @@ def __default__():
 
     # WHAT  is a revert ?
     # A revert undoes any action that have been done,and sends the remaining gas back
+
 
