@@ -1,9 +1,9 @@
 
 
 
-# pragma version 0.4.1 
+# pragma version ^0.4.1
 """
-@license MIT 
+@license MIT
 @title Buy Me A Coffee!
 @author You!
 @notice This contract is for creating a sample funding contract
