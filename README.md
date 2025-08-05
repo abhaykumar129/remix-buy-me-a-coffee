@@ -2,7 +2,9 @@
 # remix-buy-me-a-coffee
 
 ☕ Buy Me A Coffee - Vyper Smart Contract
+
 📌 Overview
+
 This is a decentralized "Buy Me A Coffee" funding contract built with Vyper.
 It allows anyone to send ETH to support the contract owner, but only if the funding amount meets a minimum USD value (using a Chainlink price feed).
 
@@ -12,7 +14,9 @@ It allows anyone to send ETH to support the contract owner, but only if the fund
 
 **** Use Case: Crowdfunding / Tips
 
+
 🔹 Features
+
 1.Users can fund the contract with ETH.
 
 2.ETH amount is converted to USD using Chainlink Price Feed.
@@ -23,8 +27,11 @@ It allows anyone to send ETH to support the contract owner, but only if the fund
 
 5.Tracks funders and their contributions.
 
+
 📦 Contract Details
+
 Constants & Immutables
+
 **** MINIMUM_USD = 5 ETH (in Wei) – Minimum funding in USD.
 
 **** OWNER – Contract deployer (immutable).
@@ -38,13 +45,10 @@ Storage Variables
 
 **** funder_to_amount_funded – Mapping of address → funded ETH.
 
-🔹 Key Functions
-Function	                       Type	                     Description
-fund()                    	    payable	                   Allows a user to fund the contract (must meet min USD).
-withdraw()	                    external	                 Allows only the owner to withdraw all ETH.
-get_eth_to_usd_rate(uint256)	    view	                   Converts given ETH to USD using Chainlink price feed.
 
 🔹 How It Works
+
+
 1.User sends ETH via fund() or by sending ETH directly to the contract.
 
 2.Contract fetches ETH/USD price from Chainlink Aggregator.
